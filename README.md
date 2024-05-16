@@ -17,13 +17,13 @@ conda activate metawrap-env
 
 mkdir READ_QC
 
-metawrap read_qc -1 PELONI_SPSEA-07-22-N1715_S6_L007_R1_001.fastq-005.gz -2 PELONI_SPSEA-07-22-N1715_S6_L007_R2_001.fastq-010.gz -t 24 -o READ_QC/
+metawrap read_qc -1 P_SPSEA-07-22-N1715_S6_L007_R1_001.fastq-005.gz -2 P_SPSEA-07-22-N1715_S6_L007_R2_001.fastq-010.gz -t 24 -o READ_QC/
 
-for i in PELONI_SPSEA-07-22-N1715_S6_L007_R1_001.fastq-005.gz_val_1.fq.gz
+for i in P_SPSEA-07-22-N1715_S6_L007_R1_001.fastq-005.gz_val_1.fq.gz
 do 
 	prefix=$(basename $i _SPSEA-07-22-N1715_S6_L007_R1_001.fastq-005.gz_val_1.fq.gz)
-mv PELONI_SPSEA-07-22-N1715_S6_L007_R1_001.fastq-005.gz_val_1.fq.gz ../CLEAN_READS/ALL_READS_1.fastq.gz
-mv PELONI_SPSEA-07-22-N1715_S6_L007_R2_001.fastq-010.gz_val_2.fq.gz ../CLEAN_READS/ALL_READS_2.fastq.gz
+mv P_SPSEA-07-22-N1715_S6_L007_R1_001.fastq-005.gz_val_1.fq.gz ../CLEAN_READS/ALL_READS_1.fastq.gz
+mv P_SPSEA-07-22-N1715_S6_L007_R2_001.fastq-010.gz_val_2.fq.gz ../CLEAN_READS/ALL_READS_2.fastq.gz
 done
 
 metawrap assembly -1 CLEAN_READS/ALL_READS_1.fastq.gz -2 CLEAN_READS/ALL_READS_2.fastq.gz  -t 30 -o ASSEMBLY
@@ -124,7 +124,7 @@ print(luca_cog_percentages,digits = 3)
 ## Detection of eukaryotes in the Mat with [EukDetect](https://github.com/allind/EukDetect)
 ```
 conda activate eukdetect
-snakemake --snakefile rules/eukdetect_eukfrac.rules --configfile PELONIdefault_configfile.yml --cores 20 runall 
+snakemake --snakefile rules/eukdetect_eukfrac.rules --configfile Pdefault_configfile.yml --cores 20 runall 
 ```
 
 
