@@ -1,9 +1,7 @@
-# Mats-Blue-Hole-Maldives
-
-Analysis for the paper:
-## Genome-resolved metagenomics revealed novel microbial taxa and distinct metabolism from giant filamentous microbial mats inhabiting anoxic deep reefs of a Maldivian Blue Hole
+# Genome-resolved metagenomics revealed novel microbial taxa and distinct metabolism from macroscopic microbial mat structures inhabiting anoxic deep reefs of a Maldivian Blue Hole 
 ___Lapo Doni 1,2, Annalisa Azzola 1,2, Caterina Oliveri 1, Emanuele Bosi 1,2, Manon Auguste 1,2, Carla Morri 1,3, Carlo Nike Bianchi 1,3, Monica Montefalcone 1,2, Luigi Vezzulli 1,2*___
 
+ 
 
 _1 Department of Earth, Environmental and Life Sciences (DiSTAV), University of Genoa, Corso Europa 26, 16132 Genoa, Italy.
 2 National Biodiversity Future Center, Palermo, Italy
